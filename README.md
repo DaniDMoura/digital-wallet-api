@@ -5,7 +5,7 @@ API simples de carteira (Java + Spring). Com o objetivo de criar wallets e reali
 ## Regra de negócio
 
 ### Wallet
-- Wallet deve ser única por **cpfCnpj** e **email** → duplicidade retorna **409 Conflict**.
+- Wallet deve ser única por **cpfCnpj** e **email** → duplicidade.
 - Tipos:
   - **USER**: pode enviar e receber transferências.
   - **MERCHANT**: pode apenas receber.
@@ -19,7 +19,6 @@ Uma transferência só é concluída quando:
 - **Autorização externa aprovada** → se negar, cancelar operação.
 - Executada com **@Transactional** para garantir atomicidade  
   (debitar, creditar e salvar `Transfer`; qualquer erro gera rollback).
-- **Notificação externa** ocorre após o commit e não desfaz a transação em caso de falha.
 
 ### Garantias
 - Nenhuma transferência gera saldo negativo.
