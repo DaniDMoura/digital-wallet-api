@@ -1,6 +1,6 @@
 # digital-wallet-api
 
-API simples de carteira (Java + Spring). Com o objetivo de criar wallets e realizar transferências. README objetivo com regra de negócio, endpoints, exemplos e diagramas. Erros seguem RFC 7807 (`application/problem+json`).
+API simples de carteira (Java + Spring). Com o objetivo de criar wallets e realizar transferências. Erros seguem RFC 7807 (`application/problem+json`).
 
 ## Regra de negócio
 
